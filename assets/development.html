@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KamiKaji - Solusi Produksi Tas & Garment Berkualitas</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/development.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.1/dist/leaflet.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="img-23">
+                    <img src="./images/Untitled2.jpg" alt="">
+                </div>
+
+                <div class="img-23-2">
+                    <img src="./images/logo.png" alt="">
+                </div>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="/index.html">Beranda</a></li>
+                    <li><a href="/index.html">Layanan</a></li>
+                    <li><a href="./portofolio.html">Galeri</a></li>
+                    <li><a href="/index.html">Kontak</a></li>
+                    <li><a href="./development.html">Development</a></li>
+                </ul>
+            </nav>
+
+            <a class="cta-button" href="#konsultasi">Konsultasi Gratis</a>
+
+            <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="mobile-nav" id="mobileNav">
+                <ul>
+                    <li><a href="/index.html">Beranda</a></li>
+                    <li><a href="/index.html">Layanan</a></li>
+                    <li><a href="./portofolio.html">Galeri</a></li>
+                    <li><a href="/index.html">Kontak</a></li>
+                    <li><a href="./development.html">Development</a></li>
+                    <li><a href="#konsultasi" class="mobile-cta">Konsultasi Gratis</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <!-- First Section: Development Flow Image -->
+    <section id="development-flow" class="section">
+        <div class="container-a">
+            <h2>Alur Pengembangan</h2>
+            <img src="./images/Dev.jpg" alt="Alur Pengembangan" class="img-fluid">
+        </div>
+    </section>
+
+<section id="kontak" class="section">
+<h2 class="section-title">Our Location</h2>
+    <div class="container">
+        <div class="location-details">
+            <div class="location-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p><strong>Alamat:</strong> Menara 165 Lt 4, Jl. TB. Simatupang Kav.1, RT009 RW003, Cilandak Timur, Pasar Minggu Jakarta Selatan 12560</p>
+            </div>
+            <div class="location-item">
+                <i class="fas fa-phone-alt"></i>
+                <p><strong>Telepon:</strong> +62813 1177 2767 | +62 819 9207 5689</p>
+            </div>
+            <div class="location-item">
+                <i class="fas fa-envelope"></i>
+                <p><strong>Email:</strong> admin@kamikaji.com</p>
+            </div>
+        </div>
+        <div id="Map"></div>
+    </div>
+
+
+</section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">           
+                                <div class="logo">
+              
+                <div class="img-23">
+                    <img src="./images/Untitled2.jpg" alt="">
+                </div>
+
+                <div class="img-23-2">
+                    <img src="./images/logo.png" alt="">
+                </div>
+            </div>
+                    <p class="footer-description">Solusi terpercaya untuk kebutuhan produksi tas dan
+                        garment berkualitas dengan pengalaman 6+ tahun melayani berbagai klien di Indonesia.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Layanan Utama</h3>
+                    <ul>
+                        <li><a href="#layanan">Produksi Tas</a></li>
+                        <li><a href="#layanan">Produksi Garment</a></li>
+                        <li><a href="#layanan">Custom Design</a></li>
+                        <li><a href="#layanan">Printing & Sablon</a></li>
+                        <li><a href="#layanan">Bordir & Emboss</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Produk Unggulan</h3>
+                    <ul>
+                        <li><a href="#galeri">Tas Kantor</a></li>
+                        <li><a href="#galeri">Tas Sekolah</a></li>
+                        <li><a href="#galeri">Kaos & Polo</a></li>
+                        <li><a href="#galeri">Jaket & Hoodie</a></li>
+                        <li><a href="#galeri">Seragam Perusahaan</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/openlayers/2.13.1/OpenLayers.js"></script>
+    <script>
+        // Coordinates for KamiKaji Office
+        var lat = -6.290468;
+        var lon = 106.809728;
+        var zoom = 14; // Adjust the zoom level
+
+        var fromProjection = new OpenLayers.Projection("EPSG:4326");   // WGS 1984
+        var toProjection = new OpenLayers.Projection("EPSG:900913"); // Spherical Mercator
+        var position = new OpenLayers.LonLat(lon, lat).transform(fromProjection, toProjection);
+
+        // Create the map object
+        var map = new OpenLayers.Map("Map");
+
+        // Create and add the OpenStreetMap layer
+        var mapnik = new OpenLayers.Layer.OSM();
+        map.addLayer(mapnik);
+
+        // Create and add the markers layer
+        var markers = new OpenLayers.Layer.Markers("Markers");
+        map.addLayer(markers);
+
+        // Add a marker at the KamiKaji office location
+        markers.addMarker(new OpenLayers.Marker(position));
+
+        // Set the map center and zoom level
+        map.setCenter(position, zoom);
+    </script>
+
+</body>
+</html>

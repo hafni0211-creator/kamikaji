@@ -1,0 +1,146 @@
+/* Development Flow Section */
+#development-flow {
+   /* Light background to separate sections */
+    padding: 0;  /* Add some space above and below the content */
+    display: grid;
+    justify-content:center;
+}
+
+#development-flow h2 {
+    text-align: center;
+    font-size: clamp(24px, 4vw, 32px);
+    color: var(--accent-yellow);
+    margin-bottom: 40px;
+}
+
+#development-flow img {
+    width: 100%;
+    height: auto;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Location & Map Section */
+#kontak {
+    background-color: #1a1a1a;
+    padding: 60px 0;
+    color: white;
+}
+
+#kontak h2 {
+    text-align: center;
+    font-size: clamp(24px, 4vw, 32px);
+    color: var(--primary-yellow);
+    margin-bottom: 30px;
+}
+
+.location-details {
+    text-align: center;
+    font-size: clamp(14px, 2.5vw, 16px);
+    margin-bottom: 30px;
+}
+
+.location-details p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#map {
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    #development-flow h2 {
+        font-size: 26px;
+    }
+
+    #development-flow img {
+        max-width: 100%;
+        height:400px;
+    }
+
+    #kontak h2 {
+        font-size: 28px;
+    }
+
+    .location-details p {
+        font-size: 14px;
+    }
+}
+
+#Map{
+    height: 400px; 
+    width: 100%;
+}
+
+.container-a {
+    display:grid;
+    max-width: 1200px;
+    margin-top:40px ;
+    margin-bottom:40px;
+    justify-content:center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display:flex;
+}
+
+.location-details {
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    margin-right:25px;
+}
+
+.location-details p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: white;
+    text-align:justify;
+}
+
+.location-details i {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #fbbf24;
+}
+
+.location-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+    width: 98%;
+}
+
+.location-item strong {
+    font-weight: bold;
+}
+
+
+/* Make the layout responsive */
+@media (max-width: 768px) {
+    .location-details {
+        flex-direction: column;
+    }
+    .location-item {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    #Map {
+        height: 250px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+}
